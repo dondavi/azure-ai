@@ -12,4 +12,9 @@ Using the search index, we can use the Azure OpenAI SDK to implement the RAG pat
 Python
 
 ```
-pip install -r requirements.txt openai
+pip install python-dotenv
+pip install openai==1.65.2
+
+
+
+`python3 ownData.py`
