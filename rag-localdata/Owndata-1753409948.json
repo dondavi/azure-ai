@@ -1,0 +1,71 @@
+{
+  "id": "f637caf3-1e15-4c20-837d-1e89be784698",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "Based on the retrieved documents, the minimal processes you should have for DevOps include:\n\n1. **Resource Ownership and Responsibility**: Ensure that all resources have clearly identified owners for change control, troubleshooting, and operational activities. This helps streamline accountability and decision-making [doc4].\n\n2. **Processes and Procedures Documentation**: Maintain well-defined and accessible processes and procedures for operational tasks. These should be stored centrally, regularly updated, and assigned to specific owners to facilitate consistency and quick onboarding [doc2].\n\n3. **Change Management**: Establish mechanisms to request, review, and approve additions, changes, and exceptions to processes, procedures, and resources. This enables deliberate decision-making based on benefits and risks [doc4].\n\n4. **Automation and Scripts as Code**: Where possible, implement scripts, templates, and automation documents as code to reduce manual errors and improve repeatability [doc2].\n\n5. **Monitoring and Feedback**: Track the performance of operations, identify defects or inefficiencies, and implement feedback mechanisms for iterative improvement [doc3].\n\n6. **Ownership and Discoverability**: Document ownership of workloads, resources, and processes, making this information discoverable to all team members. Regular review and updates are necessary to adapt to organizational changes [doc3].\n\nThese processes form the foundation of a minimal DevOps approach, ensuring operational stability, accountability, and continuous improvement .",
+        "refusal": null,
+        "role": "assistant",
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "end_turn": true,
+        "context": {
+          "citations": [
+            {
+              "content": "https://aws.amazon.com/blogs/machine-learning/build-private-and-secure-enterprise-generative-ai-apps-with-amazon-q-business-and-aws-iam-identity-center/\nhttps://aws.amazon.com/blogs/aws/amazon-q-business-now-generally-available-helps-boost-workforce-productivity-with-generative-ai/\nhttps://aws.amazon.com/blogs/aws/amazon-q-business-now-generally-available-helps-boost-workforce-productivity-with-generative-ai/\nhttps://aws.amazon.com/blogs/mt/implementing-automated-and-centralized-tagging-controls-with-aws-config-and-aws-organizations/\nhttps://aws.amazon.com/blogs/mt/implementing-automated-and-centralized-tagging-controls-with-aws-config-and-aws-organizations/\n\n\nAWS Well-Architected Framework Framework\n\n• AWS Security Blog - Extend your pre-commit hooks with AWS CloudFormation Guard\n\n• AWS DevOps Blog - Integrating AWS CloudFormation Guard into CI/CD pipelines\n\nRelated workshops:\n\n• AWS Workshop - Tagging\n\nRelated examples:\n\n• AWS Config Rules - Amazon EC2 with required tags and valid values\n\nRelated services:\n\n• AWS Config Rules - required-tags\n\n• AWS Organizations\n\nOPS02-BP02 Processes and procedures have identified owners\n\nUnderstand who has ownership of the definition of individual processes and procedures, why \nthose specific process and procedures are used, and why that ownership exists. Understanding \nthe reasons that specific processes and procedures are used aids in identification of improvement \nopportunities.\n\nDesired outcome: Your organization has a well defined and maintained set of process and \nprocedures for operational tasks. The process and procedures are stored in a central location \nand available to your team members. Process and procedures are updated frequently, by \nclearly assigned ownership. Where possible, scripts, templates, and automation documents are \nimplemented as code.\n\nCommon anti-patterns:\n\n• Processes are not documented.",
+              "title": "AWS5pillarsframework.pdf",
+              "url": null,
+              "filepath": null,
+              "chunk_id": "0"
+            },
+            {
+              "content": "aids in identification of improvement \nopportunities.\n\nDesired outcome: Your organization has a well defined and maintained set of process and \nprocedures for operational tasks. The process and procedures are stored in a central location \nand available to your team members. Process and procedures are updated frequently, by \nclearly assigned ownership. Where possible, scripts, templates, and automation documents are \nimplemented as code.\n\nCommon anti-patterns:\n\n• Processes are not documented. Fragmented scripts may exist on isolated operator workstations.\n\n• Knowledge of how to use scripts is held by a few individuals or informally as team knowledge.\n\n• A legacy process is due for an update, but ownership of the update is unclear, and the original \nauthor is no longer part of the organization.\n\n• Processes and scripts are not discoverable, so they are not readily available when required (for \nexample, in response to an incident).\n\nOrganization 91\n\nhttps://aws.amazon.com/blogs/security/extend-your-pre-commit-hooks-with-aws-cloudformation-guard/\nhttps://aws.amazon.com/blogs/devops/integrating-aws-cloudformation-guard/\nhttps://catalog.workshops.aws/tagging/\nhttps://github.com/awslabs/aws-config-rules/blob/master/python/ec2_require_tags_with_valid_values.py\nhttps://docs.aws.amazon.com/config/latest/developerguide/required-tags.html\nhttps://aws.amazon.com/organizations/\n\n\nAWS Well-Architected Framework Framework\n\nBenefits of establishing this best practice:\n\n• Processes and procedures boost your efforts to operate your workloads.\n\n• New team members become effective more quickly.\n\n• Reduced time to mitigate incidents.\n\n• Different team members (and teams) can use the same processes and procedures in a consistent \nmanner.\n\n• Teams can scale their processes with repeatable processes.\n\n• Standardized processes and procedures help mitigate the impact of transferring workload \nresponsibilities between teams.",
+              "title": "AWS5pillarsframework.pdf",
+              "url": null,
+              "filepath": null,
+              "chunk_id": "0"
+            },
+            {
+              "content": "defined \nworkloads and respond to events generated by the workload. The organization documents \nownership of processes and fulfillment and makes this information discoverable. You review and \nupdate responsibilities when organizational changes take place, and teams track and measure \nthe performance of defect and inefficiency identification activities. You implement feedback \nmechanisms to track defects and improvements and support iterative improvement.\n\nCommon anti-patterns:\n\nOrganization 95\n\nhttps://aws.amazon.com/blogs/security/extend-your-pre-commit-hooks-with-aws-cloudformation-guard/\nhttps://aws.amazon.com/blogs/devops/integrating-aws-cloudformation-guard/\nhttps://catalog.workshops.aws/well-architected-operational-excellence/en-US/\nhttps://catalog.workshops.aws/tagging/\nhttps://www.youtube.com/watch?v=GuWj_mlyTug\nhttps://www.youtube.com/watch?v=AaI2xkW85yE\nhttps://www.youtube.com/watch?v=gL3baXQJvc0\nhttps://www.youtube.com/watch?v=xHNLNTa2xGU\nhttps://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html\nhttps://aws.amazon.com/service-management-connector/\n\n\nAWS Well-Architected Framework Framework\n\n• You do not document responsibilities.\n\n• Fragmented scripts exist on isolated operator workstations. Only a few individuals know how to \nuse them or informally refer to them as team knowledge.\n\n• A legacy process is due for update, but no one knows who owns the process, and the original \nauthor is no longer part of the organization.\n\n• Processes and scripts can't be discovered, and they are not readily available when required (for \nexample, in response to an incident).\n\nBenefits of establishing this best practice:\n\n• You understand who is responsible to perform an activity, who to notify when action is needed, \nand who performs the action, validates the result, and provides feedback to the owner of the \nactivity.\n\n• Processes and procedures boost your efforts to operate your workloads.",
+              "title": "AWS5pillarsframework.pdf",
+              "url": null,
+              "filepath": null,
+              "chunk_id": "0"
+            },
+            {
+              "content": "https://www.youtube.com/watch?v=VFwCGECvq4I\nhttps://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/oa.bcl.10-make-informed-decisions-using-data.html\nhttps://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-devops-value-stream-mapping/introduction.html\n\n\nAWS Well-Architected Framework Framework\n\ngoals. Understanding responsibility, ownership, how decisions are made, and who has authority to \nmake decisions will help focus efforts and maximize the benefits from your teams.\n\nBest practices\n\n• OPS02-BP01 Resources have identified owners\n\n• OPS02-BP02 Processes and procedures have identified owners\n\n• OPS02-BP03 Operations activities have identified owners responsible for their performance\n\n• OPS02-BP04 Mechanisms exist to manage responsibilities and ownership\n\n• OPS02-BP05 Mechanisms exist to request additions, changes, and exceptions\n\n• OPS02-BP06 Responsibilities between teams are predefined or negotiated\n\nOPS02-BP01 Resources have identified owners\n\nResources for your workload must have identified owners for change control, troubleshooting, \nand other functions. Owners are assigned for workloads, accounts, infrastructure, platforms, and \napplications. Ownership is recorded using tools like a central register or metadata attached to \nresources. The business value of components informs the processes and procedures applied to \nthem.\n\nDesired outcome:\n\n• Resources have identified owners using metadata or a central register.\n\n• Team members can identify who owns resources.\n\n• Accounts have a single owner where possible.\n\nCommon anti-patterns:\n\n• The alternate contacts for your AWS accounts are not populated.\n\n• Resources lack tags that identify what teams own them.\n\n• You have an ITSM queue without an email mapping.\n\n• Two teams have overlapping ownership of a critical piece of infrastructure.\n\nBenefits of establishing this best practice:",
+              "title": "AWS5pillarsframework.pdf",
+              "url": null,
+              "filepath": null,
+              "chunk_id": "0"
+            },
+            {
+              "content": "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/ops_operations_health_measure_ops_goals_kpis.html\nhttps://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/ops_operations_health_review_ops_metrics_prioritize_improvement.html\nhttps://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/ops_evolve_ops_process_cont_imp.html\nhttps://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/automation.html\nhttps://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/aws-caf-operations-perspective.html\n\n\nAWS Well-Architected Framework Framework\n\n• AWS Well-Architected Framework Operational Excellence - Workload level Operating model \ntopologies\n\n• AWS Prescriptive Guidance - Building your Cloud Operating Model\n\n• AWS Prescriptive Guidance - Create a RACI or RASCI matrix for a cloud operating model\n\n• AWS Cloud Operations &amp; Migrations Blog - Delivering Business Value with Cloud Platform Teams\n\n• AWS Cloud Operations &amp; Migrations Blog - Why a Cloud Operating Model?\n\n• AWS DevOps Blog - How organizations are modernizing for cloud operations\n\nRelated videos:\n\n• AWS Summit Online - Cloud Operating Models for Accelerated Transformation\n\n• AWS re:Invent 2023 - Future-proofing cloud security: A new operating model\n\nOPS02-BP05 Mechanisms exist to request additions, changes, and exceptions\n\nYou can make requests to owners of processes, procedures, and resources. Requests include \nadditions, changes, and exceptions. These requests go through a change management process. \nMake informed decisions to approve requests where viable and determined to be appropriate after \nan evaluation of benefits and risks.\n\nDesired outcome:\n\n• You can make requests to change processes, procedures, and resources based on assigned \nownership.\n\n• Changes are made in a deliberate manner, weighing benefits and risks.\n\nCommon anti-patterns:",
+              "title": "AWS5pillarsframework.pdf",
+              "url": null,
+              "filepath": null,
+              "chunk_id": "0"
+            }
+          ],
+          "intent": "[\"minimal processes required for DevOps\"]"
+        }
+      }
+    }
+  ],
+  "created": 1753409973,
+  "model": "gpt-4.1-nano",
+  "object": "extensions.chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "fp_68472df8fd",
+  "usage": {
+    "completion_tokens": 298,
+    "prompt_tokens": 5498,
+    "total_tokens": 5796,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null
+  }
+}
