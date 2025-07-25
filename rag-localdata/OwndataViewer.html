@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSON Data Viewer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    h1 { font-size: 1.5em; }
+    input[type="file"] { margin-bottom: 1em; }
+    .json-table { border-collapse: collapse; margin-bottom: 1em; }
+    .json-table th, .json-table td { border: 1px solid #ccc; padding: 6px 12px; text-align: left; }
+    .json-key { font-weight: bold; color: #922; }
+    .json-string { color: #080; }
+    .json-number { color: #00f; }
+    .json-boolean { color: #a52a2a; }
+    .json-null { color: #888; }
+    .json-list { margin-left: 1em; }
+  </style>
+</head>
+<body>
+  <h1>JSON Data Viewer</h1>
+  <input type="file" id="file-input" accept=".json">
+  <div id="json-output"></div>
+  <script>
+    function renderValue(value) {
+      if (value === null) {
+        return '<span class="json-null">null</span>';
+      }
+      switch (typeof value) {
+        case 'string':
+          return '<span class="json-string">' + value + '</span>';
+        case 'number':
+          return '<span class="json-number">' + value + '</span>';
+        case 'boolean':
+          return '<span class="json-boolean">' + value + '</span>';
+        case 'object':
+          if (Array.isArray(value)) {
+            return renderArray(value);
+          } else {
+            return renderObject(value);
+          }
+        default:
+          return String(value);
+      }
+    }
+
+    function renderObject(obj) {
+      let html = '<table class="json-table">';
+      for (const key in obj) {
+        html += '<tr><th class="json-key">' + key + '</th><td>' + renderValue(obj[key]) + '</td></tr>';
+      }
+      html += '</table>';
+      return html;
+    }
+
+    function renderArray(arr) {
+      let html = '<ul class="json-list">';
+      for (const item of arr) {
+        html += '<li>' + renderValue(item) + '</li>';
+      }
+      html += '</ul>';
+      return html;
+    }
+
+    document.getElementById('file-input').addEventListener('change', function (e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function (event) {
+        try {
+          const json = JSON.parse(event.target.result);
+          document.getElementById('json-output').innerHTML = renderValue(json);
+        } catch (err) {
+          document.getElementById('json-output').textContent = 'Invalid JSON file.';
+        }
+      };
+      reader.readAsText(file);
+    });
+  </script>
+</body>
+</html>
