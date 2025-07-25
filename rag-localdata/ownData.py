@@ -4,8 +4,10 @@ import dotenv
 # import json
 import time
 # Set the current Unix epoch time
-current_unix_epoch_time = time.time()
-unix_epoch = current_unix_epoch_time
+# Generate timestamp for unique filename
+unix_epoch = int(time.time())
+
+
 # Load environment variables from .env file
 dotenv.load_dotenv()
 
