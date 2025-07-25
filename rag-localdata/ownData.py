@@ -21,10 +21,12 @@ client = openai.AzureOpenAI(
     api_key=api_key,
     api_version=api_version,
 )
+# Get the system prompt from environment variables
+text = input('\nEnter a question:\n').strip()
+follow_up = input('\nEnter a follow-up question:\n').strip()
 
- # Configure your data source
-text = input('\nEnter a question:\n')
-text = text + " " + input('\nEnter a follow-up question:\n')
+if follow_up:
+    text = f"{text} Follow-up: {follow_up}"
     
 
 # Parking these for now, as they are not used in the current implementation
