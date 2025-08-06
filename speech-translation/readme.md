@@ -1,6 +1,5 @@
 # Speech Translation with Azure AI
 
-This application demonstrates how to use Azure AI Speech Translation to translate spoken language in real-time. Users can speak phrases in English and have them translated to Spanish, French, or Hindi, with both text output and synthesized speech in the target language.
 
 ## Prerequisites
 
