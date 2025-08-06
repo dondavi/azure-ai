@@ -1,10 +1,16 @@
+# pip install -r requirements.txt azure-cognitiveservices-speech==1.42.0
+
+
 from dotenv import load_dotenv
+
 from datetime import datetime
 import os
 
 # Import namespaces
 import azure.cognitiveservices.speech as speech_sdk
-from playsound import playsound
+
+# Audio File method requires playsound package
+# from playsound import playsound
 
 def main():
     try:
