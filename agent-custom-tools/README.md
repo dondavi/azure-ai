@@ -42,7 +42,7 @@ agent-custom-tools/
 ### 1. Create Virtual Environment
 
 ```bash
-cd /Users/davidsanchez/Projects/02-agent-custom-tools
+cd /projects/agent-custom-tools
 python3 -m venv .venv
 source .venv/bin/activate  # On macOS/Linux
 # or
