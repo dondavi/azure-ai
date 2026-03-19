@@ -1,0 +1,23 @@
+======================================
+  CONTOSO OBSERVATORIES - SESSION REPORT
+======================================
+Date:           2026-03-18 21:00
+Observer:       David Sanchez
+Event:          Solar Eclipse
+Location:       antarctica
+
+NEXT VISIBLE EVENT
+  Event:        N/A
+  Date:         N/A
+
+TELESCOPE BOOKING
+  Tier:         standard
+  Hours:        2
+  Hourly Rate:  $50.00
+  Priority:     low
+  Multiplier:   1.0x
+
+COST SUMMARY
+  Base Cost:    $100.00
+  Total Cost:   $100.00
+======================================
