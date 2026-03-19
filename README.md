@@ -1,2 +1,2 @@
 # azure-ai
-Azure AI Repo for Model R&amp;D
+Azure AI Repo for AI R&amp;D
