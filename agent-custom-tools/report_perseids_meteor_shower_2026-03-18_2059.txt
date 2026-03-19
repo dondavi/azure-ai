@@ -1,0 +1,23 @@
+======================================
+  CONTOSO OBSERVATORIES - SESSION REPORT
+======================================
+Date:           2026-03-18 20:59
+Observer:       David Sanchez
+Event:          Perseids Meteor Shower
+Location:       north_america
+
+NEXT VISIBLE EVENT
+  Event:        Lyrids Meteor Shower
+  Date:         04-22
+
+TELESCOPE BOOKING
+  Tier:         advanced
+  Hours:        3
+  Hourly Rate:  $120.00
+  Priority:     normal
+  Multiplier:   1.25x
+
+COST SUMMARY
+  Base Cost:    $360.00
+  Total Cost:   $450.00
+======================================

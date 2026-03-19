@@ -1,0 +1,23 @@
+======================================
+  CONTOSO OBSERVATORIES - SESSION REPORT
+======================================
+Date:           2026-03-19 15:20
+Observer:       St Thomas University
+Event:          Lyrids Meteor Shower
+Location:       Europe
+
+NEXT VISIBLE EVENT
+  Event:        Lyrids Meteor Shower
+  Date:         04-22
+
+TELESCOPE BOOKING
+  Tier:         premium
+  Hours:        10
+  Hourly Rate:  $300.00
+  Priority:     normal
+  Multiplier:   1.25x
+
+COST SUMMARY
+  Base Cost:    $3000.00
+  Total Cost:   $3750.00
+======================================
