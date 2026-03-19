@@ -16,7 +16,7 @@ The agent is powered by Azure's Prompt Agent framework and uses three custom too
 ## Project Structure
 
 ```
-02-agent-custom-tools/
+agent-custom-tools/
 ├── agent.py                      # Main agent application
 ├── functions.py                  # Custom tool implementations
 ├── requirements.txt              # Python dependencies
